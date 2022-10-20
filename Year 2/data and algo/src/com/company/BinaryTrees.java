@@ -110,7 +110,7 @@ class BinaryTrees {
         //bt.preorder(bt.root);
         //bt.inorder(bt.root);
         bt.postorder(bt.root);
-        System.out.println("EASY");
+
 
     }
 

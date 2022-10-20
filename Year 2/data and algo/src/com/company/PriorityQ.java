@@ -31,7 +31,7 @@ class PriorityQ {
             }
 
         public void show(){
-            for(int i =0; i<list.length;i++){
+            for(int i =0; i<count;i++){
                 System.out.print(list[i]+ " ");
             }
         }

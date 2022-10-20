@@ -151,17 +151,17 @@ class linked {
         first.head = new Node(1);
         Node second = new Node(2);
         first.head.Pointer = second; // link the pointers;
+        System.out.println(first.head.Pointer.data);
 
-
-        first.push(12);
-        first.middle(0, first.size() / 2);
-        first.end(66);
+        //first.push(12);
+        //first.middle(0, first.size() / 2);
+        //first.end(66);
         // first.delfirst();
         //first.delend();
 
         //first.midel(first.size()/2)
-        first.reverse2();
-        first.print();
+        //first.reverse2();
+        //first.print();
 
         //first.reverse(first);
     }

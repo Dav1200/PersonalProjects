@@ -91,6 +91,8 @@ class Queue {
         a.dequeue();
         a.enqueue(2);
         a.dequeue();
+        a.dequeue();
+        a.enqueue(6);
         a.peak();
         a.queueDisplay();
 

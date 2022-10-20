@@ -1,7 +1,9 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Heap {
-    static int heap[];
+    static int[] heap;
     static int count;
 
     Heap(int n) {
@@ -25,8 +27,8 @@ public class Heap {
     public int extract(){
         /*
         Make the last element the parent
-        call the movedown method to check order
-        parameters inlcude first position and last
+        call the moved method to check order
+        parameters include first position and last
          */
         int max = heap[0];
         heap[0] = heap[count-1];
@@ -36,8 +38,15 @@ public class Heap {
 
     }
 
+    public int[] merge(int[] a,int[] b){
 
-    public void heapsort(int data[]){
+        int[] n = new int[a.length+b.length];
+
+return  n;
+    }
+
+
+    public void heapsort(int[] data){
 
     }
 
