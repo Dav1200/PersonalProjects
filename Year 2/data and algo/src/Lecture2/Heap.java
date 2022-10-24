@@ -1,6 +1,4 @@
-package com.company;
-
-import java.util.ArrayList;
+package Lecture2;
 
 public class Heap {
     static int[] heap;

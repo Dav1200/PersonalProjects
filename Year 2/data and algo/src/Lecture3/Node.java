@@ -23,7 +23,8 @@ class Node {
         }
 
         public void addToHead(int el) {
-            head = new Node(el, null);
+
+            head = new Node(el, head);
             if (tail == null) {
                 tail = head;
             }
@@ -82,12 +83,13 @@ class Node {
 
 
         SLList ll = new SLList();
-        ll.addToTail(3);
-        ll.addToTail(5);
-        ll.addToTail(4);
-        ll.addToTail(1);
-        ll.test();
+        ll.addToHead(1);
 
+        ll.addToHead(2);
+        ll.addToHead(3);
+        ll.addToHead(4);
+ll.print();
+        System.out.println(ll.tail.info);
 
     }
 }
