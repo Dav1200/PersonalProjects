@@ -43,16 +43,62 @@ public class DLLNode {
                 tail.prev.next = tail;
             }
         }
+
+        public int deleteFromHead() {
+            int el = tail.next.data;
+            if (tail == tail.next)
+                tail = null;
+            else
+                tail.next = tail.next.next;
+            return el;
+        }
+
+
+        public void forwards() {
+            for (DLLNode p = head; p != null; p = p.next)
+                System.out.println(p.data);
+        }
+
+        public void backwards() {
+            for (DLLNode p = tail; p != null; p = p.prev)
+                System.out.println(p.data);
+        }
+
+        public int deleteTail() {
+            int ele = tail.data;
+            if (head == tail) {
+                head = tail = null;
+
+            } else {
+                tail = tail.prev;
+                tail.next = null;
+            }
+            return ele;
+        }
+
+        public void deleteAny(DLLNode p) {
+            if (p.prev == null) {
+                head = p.next;
+            } else {
+                p.prev.next = p.next;
+            }
+
+            if (p.next == null) {
+                tail = p.prev;
+            } else {
+                p.next.prev = p.prev;
+            }
+        }
+
     }
 
 
     public static void main(String[] args) {
         DLList a = new DLList();
+        a.addHead(4);
+        a.addHead(3);
         a.addHead(2);
-
         a.addHead(1);
-        System.out.println(a.tail.data);
-        System.out.println(a.head.next.prev.data);
-
+        a.backwards();
     }
 }
